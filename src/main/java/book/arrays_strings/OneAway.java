@@ -43,7 +43,7 @@ public class OneAway {
         } else if(isInsert) {
             for (int i = 0; i < s2.length(); i++) {
                 String prefix = s2.substring(0, i);
-                String suffix = s2.substring(i, s2.length() - 1);
+                String suffix = s2.substring(i + 1);
 
                 if (s1.equals(prefix + suffix)) {
                     return true;
